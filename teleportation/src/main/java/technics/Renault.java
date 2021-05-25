@@ -3,6 +3,7 @@ package technics;
 public class Renault {
     private int speed;
     private String color;
+    private int WD;
 
     public Renault(int speed, String color) {
         this.speed = speed;
@@ -23,5 +24,13 @@ public class Renault {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public int getWD() {
+        return WD;
+    }
+
+    public void setWD(int WD) {
+        this.WD = WD;
     }
 }
