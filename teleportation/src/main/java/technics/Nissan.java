@@ -4,6 +4,7 @@ public class Nissan implements Car {
 
     private int speed;
     private String color;
+    private String modelName;
     private int WD;
 
     public Nissan(int speed, String color) {
@@ -25,6 +26,14 @@ public class Nissan implements Car {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getModelName() {
+        return modelName;
+    }
+
+    public void setModelName(String modelName) {
+        this.modelName = modelName;
     }
 
     public int getWD() {
