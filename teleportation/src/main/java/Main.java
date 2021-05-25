@@ -4,5 +4,8 @@ public class Main {
         System.out.println("Learn GIT and Konsole");
         System.out.println("Cat");
         System.out.println("Dog");
+
+        Runner appRunner = new Runner("Приложение запустилось и работает");
+        appRunner.executeApp();
     }
 }
