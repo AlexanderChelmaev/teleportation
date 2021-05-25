@@ -12,6 +12,15 @@ public class Runner {
         System.out.println("Learn GIT and Konsole");
         System.out.println("Cat");
         System.out.println("Dog");
+
+        for (int i = 0; i < 100; i++) {
+            int j = 0;
+            while (j < i) {
+                System.out.print(" Pet ");
+                j++;
+            }
+            System.out.println();
+        }
     }
 
     private void run() {
