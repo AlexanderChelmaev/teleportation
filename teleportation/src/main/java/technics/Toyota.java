@@ -5,7 +5,9 @@ public class Toyota implements Car {
     private int speed;
     private String color;
     private String modelName;
+    private int maxSpeed;
     private int wheelRadius;
+    private boolean reduceSpeed;
 
     public Toyota(int speed, String color) {
         this.speed = speed;
@@ -36,11 +38,27 @@ public class Toyota implements Car {
         this.modelName = modelName;
     }
 
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
     public int getWheelRadius() {
         return wheelRadius;
     }
 
     public void setWheelRadius(int wheelRadius) {
         this.wheelRadius = wheelRadius;
+    }
+
+    public boolean isReduceSpeed() {
+        return reduceSpeed;
+    }
+
+    public void setReduceSpeed(boolean reduceSpeed) {
+        this.reduceSpeed = reduceSpeed;
     }
 }
