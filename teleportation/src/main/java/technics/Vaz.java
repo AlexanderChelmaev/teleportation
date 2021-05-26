@@ -6,6 +6,7 @@ public class Vaz {
     private String color;
     private String modelName;
     private int maxSpeed;
+    private int wheelRadius;
 
     public Vaz(int speed, String color) {
         this.speed = speed;
@@ -42,5 +43,13 @@ public class Vaz {
 
     public void setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
+    }
+
+    public int getWheelRadius() {
+        return wheelRadius;
+    }
+
+    public void setWheelRadius(int wheelRadius) {
+        this.wheelRadius = wheelRadius;
     }
 }
