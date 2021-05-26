@@ -1,3 +1,5 @@
+import omelet.Omelet;
+
 public class Runner {
     private final String runText;
 
@@ -7,20 +9,6 @@ public class Runner {
 
     public void executeApp() {
         run();
-
-        System.out.println("Learn GIT");
-        System.out.println("Learn GIT and Konsole");
-        System.out.println("Cat");
-        System.out.println("Dog");
-
-        for (int i = 0; i < 100; i++) {
-            int j = 0;
-            while (j < i) {
-                System.out.print(" Pet ");
-                j++;
-            }
-            System.out.println();
-        }
 
         System.out.println("Car Factory");
         CarFactory renaultCarFactory = CarFactory.getCarFactory("RenaultCarFactory", 120L);
@@ -39,6 +27,10 @@ public class Runner {
                         renaultCarFactory.getWorkersAmount()
                 )
         );
+
+        System.out.println("\nЯичница");
+        Omelet omelet = new Omelet(new Omelet.Builder(3, 3).setTomatoAmount(4));
+        omelet.printOmelet();
     }
 
     private void run() {
