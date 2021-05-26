@@ -29,7 +29,7 @@ public class Runner {
         );
 
         System.out.println("\nЯичница");
-        Omelet omelet = new Omelet(new Omelet.Builder(3, 3).setTomatoAmount(4));
+        Omelet omelet = new Omelet.Builder(3, 3).tomatoAmount(4).build();
         omelet.printOmelet();
     }
 

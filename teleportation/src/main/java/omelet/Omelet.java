@@ -19,18 +19,22 @@ public class Omelet {
             this.pinchSaltAmount = pinchSaltAmount;
         }
 
-        public Builder setTomatoAmount(int tomatoAmount) {
+        public Builder tomatoAmount(int tomatoAmount) {
             this.tomatoAmount = tomatoAmount;
             return this;
         }
 
-        public Builder setLeafGreenery(int leafGreenery) {
+        public Builder leafGreenery(int leafGreenery) {
             this.leafGreenery = leafGreenery;
             return this;
         }
+
+        public Omelet build() {
+            return new Omelet(this);
+        }
     }
 
-    public Omelet(Builder builder) {
+    private Omelet(Builder builder) {
         this.eggsAmount = builder.eggsAmount;
         this.pinchSaltAmount = builder.pinchSaltAmount;
         this.tomatoAmount = builder.tomatoAmount;
