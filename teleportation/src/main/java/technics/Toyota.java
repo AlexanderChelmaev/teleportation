@@ -61,4 +61,12 @@ public class Toyota implements Car {
     public void setReduceSpeed(boolean reduceSpeed) {
         this.reduceSpeed = reduceSpeed;
     }
+
+    @Override
+    public String toString() {
+        return "Toyota{" +
+                "speed=" + speed +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }

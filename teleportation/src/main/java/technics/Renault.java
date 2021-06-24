@@ -1,6 +1,6 @@
 package technics;
 
-public class Renault {
+public class Renault implements Car{
     private int speed;
     private String color;
     private String modelName;
@@ -41,5 +41,13 @@ public class Renault {
 
     public void setWD(int WD) {
         this.WD = WD;
+    }
+
+    @Override
+    public String toString() {
+        return "Renault{" +
+                "speed=" + speed +
+                ", color='" + color + '\'' +
+                '}';
     }
 }
